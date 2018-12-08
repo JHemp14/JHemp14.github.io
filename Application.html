@@ -59,13 +59,25 @@
             
             
         }
-        
+        .navbar-brand img {
+            width: 50%;
+            height: auto;
+        }
       
+        .formMargin{
+            
+            margin-left: 15px;
+            
+        }
+        
+     
+            
+        }
             
         
             
         
-        
+       
         
       </style>
   </head>
@@ -105,13 +117,13 @@
       <div class="container jobapplication">
   <form>
   <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputEmail4">First Name</label>
-      <input type="email" class="form-control" id="inputEmail4" placeholder="First Name">
+    <div class="form-group col-md-4 formMargin">
+      <label for="inputName4">First Name</label>
+      <input type="text" class="form-control" id="inputName4" placeholder="First Name">
     </div>
-    <div class="form-group col-md-6">
-      <label for="inputPassword4">Last Name</label>
-      <input type="password" class="form-control" id="inputPassword4" placeholder="Last Name">
+    <div class="form-group col-md-4 formMargin">
+      <label for="inputName4">Last Name</label>
+      <input type="text" class="form-control" id="inputName4" placeholder="Last Name">
     </div>
   </div>
       <div class="form-group col-md-6">
@@ -120,39 +132,73 @@
         <option selected>Choose Gender</option>
         <option>Male</option>
         <option>Female</option>
-        <option>Other</option>
+          <option>Other</option>
+          
       </select>
     </div>
-  <div class="form-group">
-    <label for="inputAddress2">Address 2</label>
-    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+ <div class="form-group">
+  <label class="col-md-4 control-label" for="experience">Select what prior experience you have. (Ctrl Click to Select Multiple)</label>
+  <div class="col-md-4">
+    <select id="experience" name="experience" class="form-control" multiple="multiple">
+      <option value="">Java</option>
+      <option value="">HTML</option>
+      <option value="">C#</option>
+      <option value="">jQuery</option>
+      <option value="">PHP</option>
+      <option value="">Json</option>
+      <option value="">Linux</option>
+      <option value="">Windows</option>
+      <option value="">iOS</option>
+      <option value="">Android</option>
+      <option value="">CSS</option>
+      <option value="">JavaScript</option>
+      <option value="">C++</option>
+      <option value="">Python</option>
+    </select>
   </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputCity">City</label>
-      <input type="text" class="form-control" id="inputCity">
-    </div>
-    <div class="form-group col-md-4">
-      <label for="inputState">State</label>
-      <select id="inputState" class="form-control">
-        <option selected>Choose...</option>
-        <option>...</option>
-      </select>
-    </div>
-    <div class="form-group col-md-2">
-      <label for="inputZip">Zip</label>
-      <input type="text" class="form-control" id="inputZip">
-    </div>
+</div>
+      
+      
+      <div class="form-group">
+  <label class="col-md-4 control-label" for="currwork">Are you currently in employment?</label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="currwork-0">
+      <input type="radio" name="currwork" id="currwork-0" value="1" checked="checked">
+      Yes
+    </label>
   </div>
-  <div class="form-group">
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" id="gridCheck">
-      <label class="form-check-label" for="gridCheck">
-        Check me out
+  <div class="radio">
+    <label for="currwork-1">
+      <input type="radio" name="currwork" id="currwork-1" value="2">
+      No
+    </label>
+  </div>
+  </div>
+</div>
+
+
+   <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control formMargin" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+    
+
+    
+
+   <div class="form-group">
+    <div class="form-check formMargin">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Agree to terms and conditions
       </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
     </div>
   </div>
-  <button type="submit" class="btn btn-primary">Sign in</button>
+  <button type="submit" class="btn btn-primary formMargin">Apply</button>
 </form>
           
       </div>
@@ -167,7 +213,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
           
           <script>
-          
+        
         
           </script>
           
